@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Hiljennin</string>
+    <string name="instructions">Milloin haluat palauttaa äänen takaisin?</string>
+    <string name="set">Aika</string>
+    <string name="never">Ei koskaan</string>
+    <string name="now">Heti</string>
+    <string name="done">Valmis</string>
+    <string name="volume">Äänenvoimakkuus</string>
+    <string name="ticker">Hiljennetty %s</string>
+    <string name="notification_title">Hiljennetty %s asti</string>
+    <string name="notification_text">Muuta tai peru valitsemalla</string>
+    <plurals name="Nminutes">
+        <item quantity="one">1 minuutti</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> minuuttia</item>
+    </plurals>
+    <plurals name="Nhours">
+        <item quantity="one">1 tunti</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> tuntia</item>
+    </plurals>
+    <string name="description">Jäikö tärkeä puhelu vastaamatta kun puhelin unohtui
+    äänettömälle? Älä anna tämän toistua enää koskaan! Kun sovellus on
+    asennettuna, aina kun hiljennät hälytysäänen, sinulta kysytään
+    kuinka kauan haluat puhelimen pysyvän äänettömällä. Kun valitsemasi
+    aika on kulunut, soittoäänet laitetaan takaisin käyttöön
+    automaattisesti.</string>
+    <string name="info"><font fgcolor="#ffffffff"><b>Hiljentimen</b></font> käyttö on yksinkertaista! 
+    Laitat vain puhelin äänettömälle reunan voimakkuusnäppäimestä.
+    
+    \n\nKun laitat puhelimen <font fgcolor="#ffffffff"><b>äänettömälle</b></font> tai 
+    <font fgcolor="#ffffffff"><b>värinähälytykselle</b></font>, sinulta kysytään
+    aika milloin haluat äänet takaisin käyttöön. Jos valitsit
+    <font fgcolor="#ffffffff"><b>äänettömän</b></font> tai 
+    <font fgcolor="#ffffffff"><b>värinän</b></font> vahingossa, lisää vain äänenvoimakkuutta takaisin
+    ja dialogi poistuu.
+    
+    \n\nAjastin osoittaa aina senhetkistä kellonaikaa, eli ajastaaksesi kaksi tuntia,
+    napauta tunnin <font fgcolor="#ffffffff"><b>+</b></font>-näppäintä kahdesti.
+      
+    \n\nKun ajastin on asetettu, ilmoituspalkissa kerrotaan paljonko hiljennysaikaa on
+    jäljellä. Valitsemalla ilmoituksen voit joko <font fgcolor="#ffffffff"><b>muuttaa</b></font> 
+    tai <font fgcolor="#ffffffff"><b>poistaa</b></font> ajastuksen.
+    Voit myös poistaa ajastuksen milloin tahansa kääntämällä hälytysäänen päälle
+    puhelimen äänenvoimakkuussäätimellä.  
+    
+    \n\nJos haluat poistaa ajastuskyselyn käytöstä, 
+    <font fgcolor="#ffffffff"><b>poista</b></font> asennettu ohjelma.
+    <string name="number_picker_increment_button">"Lisää"</string>
+    <string name="number_picker_decrement_button">"Vähennä"</string>
+    </string>
+</resources>
