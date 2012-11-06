@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconDipSize">
+        <ignore path="res/drawable-ldpi/stat_sys_ringer_silent.png" />
+    </issue>
+    <issue id="IconDuplicatesConfig" severity="ignore" />
+</lint>
