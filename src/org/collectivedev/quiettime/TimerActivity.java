@@ -14,7 +14,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-//DO A SEARCH FOR CRT60
+
 package org.collectivedev.quiettime;
 
 import android.annotation.SuppressLint;
@@ -38,7 +38,6 @@ import java.text.DateFormat;
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
 import java.util.Date;
-//import java.util.Timer;
 
 /**
  * Prompts the user to enter a time at which to turn the ringer back on.
@@ -102,10 +101,10 @@ public class TimerActivity extends Activity implements View.OnClickListener,
         window.addFlags(FLAG_SHOW_WHEN_LOCKED);
         
         setContentView(R.layout.main);
-             //CRT60 getInstance is not right it tells me
+            
         mTimer = Timer.getInstance(this);
 
-        View hourPicker = findViewById(R.id.increment);
+        View hourPicker = findViewById(R.id.hour);
         mHour = (TextView) hourPicker.findViewById(R.id.timepicker_input);
         mIncrementHour = hourPicker.findViewById(R.id.increment);
         mDecrementHour = hourPicker.findViewById(R.id.decrement);
@@ -113,14 +112,14 @@ public class TimerActivity extends Activity implements View.OnClickListener,
         mIncrementHour.setOnClickListener(this);
         mDecrementHour.setOnClickListener(this);
 
-        View minutePicker = findViewById(R.id.increment);
+        View minutePicker = findViewById(R.id.minute);
         mMinute = (TextView) minutePicker.findViewById(R.id.timepicker_input);
         mIncrementMinute = minutePicker.findViewById(R.id.increment);
         mDecrementMinute = minutePicker.findViewById(R.id.decrement);
         mMinute.setCursorVisible(false);
         mIncrementMinute.setOnClickListener(this);
         mDecrementMinute.setOnClickListener(this);
-        mAmPm = (Button) findViewById(R.id.increment);
+        mAmPm = (Button) findViewById(R.id.amPm);
         mDuration = (TextView) findViewById(R.id.duration);
         mAmPm.setOnClickListener(this);
         mAmPm.setVisibility(is24HourFormat() ? View.GONE : View.VISIBLE);
@@ -200,7 +199,7 @@ public class TimerActivity extends Activity implements View.OnClickListener,
         if (v == mButtonSet) {
             int volume = mSeekVolume.getProgress();
             Preferences.setVolume(this, volume);
-                   //CRT60 set is not right it tells me
+                  
             mTimer.set(mTime);
             finish();
         } else if (v == mButtonNever) {
@@ -271,7 +270,7 @@ public class TimerActivity extends Activity implements View.OnClickListener,
 
     private void updateTime() {
         mTime.normalize(false);
-                      //CRT60 now, and tomorrow is not right it tells me
+                   
         Time now = Timer.now();
         Time tomorrow = Timer.tomorrow();
 
@@ -292,7 +291,7 @@ public class TimerActivity extends Activity implements View.OnClickListener,
 
         boolean isPm = (mTime.hour >= 12);
         mAmPm.setText(mAmPmStrings[isPm ? Calendar.PM : Calendar.AM]);
-                     //CRT60 getFormatDuration is not right it tells me
+                    
         CharSequence duration = Timer.getFormattedDuration(this, now, mTime);
         mDuration.setText(duration);
         
