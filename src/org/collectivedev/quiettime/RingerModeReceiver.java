@@ -22,13 +22,17 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
+import android.provider.Settings;
 
 public class RingerModeReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent data) {
+        public boolean mQTEnabled;
         String action = data.getAction();
         if (AudioManager.RINGER_MODE_CHANGED_ACTION.equals(action)) {
+            mQTEnabled = Settings.System.getBoolean(context.getContentResolver(), Settings.System.ENABLE_QUIETTIME, false);
+    	if (mQTEnabled == true) {
             Timer timer = Timer.getInstance(context);
             int ringerMode = data.getIntExtra(AudioManager.EXTRA_RINGER_MODE, -1);
             if (ringerMode == AudioManager.RINGER_MODE_SILENT
@@ -47,5 +51,8 @@ public class RingerModeReceiver extends BroadcastReceiver {
                 timer.cancel();
             }
         }
+    	} else {
+		  return;
+		}
     }
 }
