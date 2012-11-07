@@ -14,7 +14,8 @@
         android:id="@+id/timepicker_input"
         style="?numberPickerInputTextStyle"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="#ffff8e00" />
 
     <ImageButton
         android:id="@+id/decrement"
