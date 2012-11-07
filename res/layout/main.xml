@@ -29,7 +29,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/instructions"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text_color" />
 
                 <include
                     android:id="@+id/time"
@@ -43,6 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/holo_blue_dark"
                     android:visibility="gone" />
 
                 <TextView
@@ -50,13 +52,15 @@
                     android:layout_height="wrap_content"
                     android:padding="6dip"
                     android:text="@string/volume"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/main_text_color" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal"
+                    android:showDividers="beginning" >
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -85,7 +89,7 @@
         <LinearLayout
             style="@android:style/Holo.ButtonBar"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_marginTop="8dip"
             android:orientation="horizontal" >
 
@@ -97,6 +101,7 @@
                 android:layout_weight="1"
                 android:minEms="4"
                 android:text="@string/never"
+                android:textColor="@android:color/holo_red_light"
                 tools:ignore="NewApi" />
 
             <Button
@@ -106,7 +111,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="4"
-                android:text="@string/set" />
+                android:text="@string/set"
+                android:textColor="@color/current_time_color" />
 
             <Button
                 android:id="@+id/now"
@@ -115,8 +121,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minEms="4"
-                android:text="@string/now" />
+                android:text="@string/now"
+                android:textColor="@color/now_button_text_color" />
+
         </LinearLayout>
+
     </LinearLayout>
 
 </merge>

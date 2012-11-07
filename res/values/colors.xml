@@ -1,0 +1,9 @@
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <color name="main_text_color">#ffff8e00</color>
+     <color name="current_time_color">#ffffe200</color>
+     <color name="time_adjusting_text">#ffffffff</color>
+     <color name="now_button_text_color">#ff00af33</color>
+
+</resources>

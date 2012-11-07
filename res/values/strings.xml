@@ -6,7 +6,7 @@
     <string name="never">Never</string>
     <string name="now">Now</string>
     <string name="done">Done</string>
-    <string name="volume">Volume</string>
+    <string name="volume">Set Volume level on restore</string>
     <string name="ticker">Silenced for %s</string>
     <string name="notification_title">Silenced until %s</string>
     <string name="notification_text">Select to change or cancel</string>
@@ -18,8 +18,7 @@
         <item quantity="one">1 hour</item>
         <item quantity="other"><xliff:g id="count">%d</xliff:g> hours</item>
     </plurals>
-    <string name="description">"Have you ever missed an important call because your ringer was
-    off? Don't let it happen again! When this application is installed,
+    <string name="description">" When this application is installed, and enabled,
     each time you turn your ringer off you will be asked how long you
     would like your phone to be silent. After that period of time has
     passed, your ringer will be automatically turned back on."</string>
@@ -46,7 +45,7 @@
     using the volume keys on your phone.
     
     \n\nIf you decide you don\'t want to be prompted anymore, 
-    just <font fgcolor="#ffffffff"><b>uninstall</b></font> the application.
+    just <font fgcolor="#ffffffff"><b>use the toggle here</b></font>Savvy?
     </string>
     <!-- Description of the button to increment value. [CHAR LIMIT=NONE] -->
     <string name="number_picker_increment_button">Increment</string>
