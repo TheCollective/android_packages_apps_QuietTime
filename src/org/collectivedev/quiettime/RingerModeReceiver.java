@@ -25,10 +25,9 @@ import android.media.AudioManager;
 import android.provider.Settings;
 
 public class RingerModeReceiver extends BroadcastReceiver {
-
+public boolean mQTEnabled;
     @Override
     public void onReceive(Context context, Intent data) {
-        public boolean mQTEnabled;
         String action = data.getAction();
         if (AudioManager.RINGER_MODE_CHANGED_ACTION.equals(action)) {
             mQTEnabled = Settings.System.getBoolean(context.getContentResolver(), Settings.System.ENABLE_QUIETTIME, false);
