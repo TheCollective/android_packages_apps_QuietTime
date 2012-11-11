@@ -101,7 +101,7 @@
                 android:layout_weight="1"
                 android:minEms="4"
                 android:text="@string/never"
-                android:textColor="@android:color/holo_red_light"
+                android:textColor="@color/never_button_text_color"
                 tools:ignore="NewApi" />
 
             <Button
@@ -112,7 +112,7 @@
                 android:layout_weight="1"
                 android:minEms="4"
                 android:text="@string/set"
-                android:textColor="@color/current_time_color" />
+                android:textColor="@color/chosen_button_time_color" />
 
             <Button
                 android:id="@+id/now"
